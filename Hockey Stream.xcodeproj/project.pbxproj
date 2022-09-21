@@ -1,0 +1,763 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FB23BB647BF6A2CC33522DF3 /* Pods_Sports_Factor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7246A55647AF25AC0F5AECFE /* Pods_Sports_Factor.framework */; };
+		FF042ADC28C1C40800D939B7 /* NewsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF042ADB28C1C40800D939B7 /* NewsModel.swift */; };
+		FF042AE328C1C47900D939B7 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF042ADF28C1C47900D939B7 /* APIClient.swift */; };
+		FF042AE428C1C47900D939B7 /* HeaderRequestParameter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF042AE028C1C47900D939B7 /* HeaderRequestParameter.swift */; };
+		FF042AE528C1C47900D939B7 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF042AE128C1C47900D939B7 /* APIManager.swift */; };
+		FF042AE628C1C47900D939B7 /* FileParameterRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF042AE228C1C47900D939B7 /* FileParameterRequest.swift */; };
+		FF042AF428C1C5BC00D939B7 /* Global Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF042AF228C1C5BC00D939B7 /* Global Constants.swift */; };
+		FF042AF528C1C5BC00D939B7 /* ResponseData.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF042AF328C1C5BC00D939B7 /* ResponseData.swift */; };
+		FF042B3628C1C82000D939B7 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF042B3328C1C82000D939B7 /* UIView+Extensions.swift */; };
+		FF042B3728C1C82000D939B7 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF042B3428C1C82000D939B7 /* Extensions.swift */; };
+		FF042B3828C1C82000D939B7 /* IndicatorManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF042B3528C1C82000D939B7 /* IndicatorManager.swift */; };
+		FF042B3D28C1C89300D939B7 /* NewsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF042B3B28C1C89300D939B7 /* NewsCell.swift */; };
+		FF042B3E28C1C89300D939B7 /* NewsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF042B3C28C1C89300D939B7 /* NewsCell.xib */; };
+		FF042B4128C1C92600D939B7 /* CommomViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF042B4028C1C92600D939B7 /* CommomViewModel.swift */; };
+		FF042B4428C1C9BA00D939B7 /* NewsDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF042B4328C1C9BA00D939B7 /* NewsDetailsVC.swift */; };
+		FF042B4828C1CA2300D939B7 /* NewsDetailsVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF042B4728C1CA2300D939B7 /* NewsDetailsVM.swift */; };
+		FF042B4A28C1CB6A00D939B7 /* SportsDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF042B4928C1CB6A00D939B7 /* SportsDataModel.swift */; };
+		FF8AD07328C2B273005EBEF6 /* MatchesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF8AD06F28C2B273005EBEF6 /* MatchesCell.swift */; };
+		FF8AD07A28C2BA6C005EBEF6 /* HockeyPre.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF8AD07928C2BA6C005EBEF6 /* HockeyPre.swift */; };
+		FF90EB8728BF58A2003B872B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF90EB8628BF58A2003B872B /* AppDelegate.swift */; };
+		FF90EB8928BF58A2003B872B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF90EB8828BF58A2003B872B /* SceneDelegate.swift */; };
+		FF90EB8B28BF58A2003B872B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF90EB8A28BF58A2003B872B /* ViewController.swift */; };
+		FF90EB9028BF58A4003B872B /* image.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF90EB8F28BF58A4003B872B /* image.xcassets */; };
+		FF90EB9328BF58A4003B872B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF90EB9128BF58A4003B872B /* LaunchScreen.storyboard */; };
+		FF90EB9D28BF62C4003B872B /* UpcommingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF90EB9C28BF62C4003B872B /* UpcommingVC.swift */; };
+		FF90EBA128BF8D20003B872B /* MenuVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF90EBA028BF8D20003B872B /* MenuVC.swift */; };
+		FF90EBA328BF9EEE003B872B /* CompleatedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF90EBA228BF9EEE003B872B /* CompleatedVC.swift */; };
+		FF90EBA528BFD4F7003B872B /* CalendarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF90EBA428BFD4F7003B872B /* CalendarVC.swift */; };
+		FF90EBA728BFD536003B872B /* NewsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF90EBA628BFD536003B872B /* NewsVC.swift */; };
+		FF90EBA928BFD542003B872B /* NotesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF90EBA828BFD542003B872B /* NotesVC.swift */; };
+		FF90EBAB28BFD54E003B872B /* SettingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF90EBAA28BFD54E003B872B /* SettingsVC.swift */; };
+		FF90EBAD28BFF900003B872B /* click_buttons.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FF90EBAC28BFF900003B872B /* click_buttons.mp3 */; };
+		FF90EBB428C017BF003B872B /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF90EBB328C017BF003B872B /* CoreDataManager.swift */; };
+		FF90EBB728C017D6003B872B /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FF90EBB528C017D6003B872B /* Model.xcdatamodeld */; };
+		FF90EBBF28C018B1003B872B /* NewNote+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF90EBBD28C018B1003B872B /* NewNote+CoreDataClass.swift */; };
+		FF90EBC028C018B1003B872B /* NewNote+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF90EBBE28C018B1003B872B /* NewNote+CoreDataProperties.swift */; };
+		FF9D9F4528C375D000C2AE4A /* Games.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9D9F3628C375D000C2AE4A /* Games.swift */; };
+		FF9D9F5528C40C3C00C2AE4A /* HockeyEnd.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9D9F5428C40C3C00C2AE4A /* HockeyEnd.swift */; };
+		FF9D9F5C28C421D800C2AE4A /* EntryNoteVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9D9F5B28C421D800C2AE4A /* EntryNoteVC.swift */; };
+		FF9D9F5E28C4280500C2AE4A /* DetailNoteVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9D9F5D28C4280500C2AE4A /* DetailNoteVC.swift */; };
+		FF9D9F6228C4377800C2AE4A /* FactorVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9D9F6128C4377800C2AE4A /* FactorVC.swift */; };
+		FF9D9F6728C43D0400C2AE4A /* oddsPreMatches.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9D9F6628C43D0400C2AE4A /* oddsPreMatches.swift */; };
+		FF9D9F7528C4404900C2AE4A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF9D9F7428C4404900C2AE4A /* Main.storyboard */; };
+		FF9D9F7728C440B500C2AE4A /* bukCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9D9F7628C440B400C2AE4A /* bukCell.swift */; };
+		FF9FDE8828C4A14A00F7BDA4 /* HockeyStatisticVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9FDE8728C4A14A00F7BDA4 /* HockeyStatisticVC.swift */; };
+		FFED6B9A28C6381000C7CB9D /* StatisticHockey.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFED6B9928C6381000C7CB9D /* StatisticHockey.swift */; };
+		FFED6B9C28C6458E00C7CB9D /* CalendarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFED6B9B28C6458E00C7CB9D /* CalendarCell.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		FF042AA228C1C30900D939B7 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		3ECB208E983A6D53B8B7D6D0 /* Pods-Sports-Factor.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sports-Factor.release.xcconfig"; path = "Target Support Files/Pods-Sports-Factor/Pods-Sports-Factor.release.xcconfig"; sourceTree = "<group>"; };
+		7246A55647AF25AC0F5AECFE /* Pods_Sports_Factor.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Sports_Factor.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		86E37589F5542FEECC521938 /* Pods-Sports-Factor.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sports-Factor.debug.xcconfig"; path = "Target Support Files/Pods-Sports-Factor/Pods-Sports-Factor.debug.xcconfig"; sourceTree = "<group>"; };
+		FF042ADB28C1C40800D939B7 /* NewsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsModel.swift; sourceTree = "<group>"; };
+		FF042ADF28C1C47900D939B7 /* APIClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		FF042AE028C1C47900D939B7 /* HeaderRequestParameter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeaderRequestParameter.swift; sourceTree = "<group>"; };
+		FF042AE128C1C47900D939B7 /* APIManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		FF042AE228C1C47900D939B7 /* FileParameterRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileParameterRequest.swift; sourceTree = "<group>"; };
+		FF042AF228C1C5BC00D939B7 /* Global Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Global Constants.swift"; sourceTree = "<group>"; };
+		FF042AF328C1C5BC00D939B7 /* ResponseData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResponseData.swift; sourceTree = "<group>"; };
+		FF042B3328C1C82000D939B7 /* UIView+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
+		FF042B3428C1C82000D939B7 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		FF042B3528C1C82000D939B7 /* IndicatorManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IndicatorManager.swift; sourceTree = "<group>"; };
+		FF042B3B28C1C89300D939B7 /* NewsCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsCell.swift; sourceTree = "<group>"; };
+		FF042B3C28C1C89300D939B7 /* NewsCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NewsCell.xib; sourceTree = "<group>"; };
+		FF042B4028C1C92600D939B7 /* CommomViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommomViewModel.swift; sourceTree = "<group>"; };
+		FF042B4328C1C9BA00D939B7 /* NewsDetailsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsDetailsVC.swift; sourceTree = "<group>"; };
+		FF042B4728C1CA2300D939B7 /* NewsDetailsVM.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsDetailsVM.swift; sourceTree = "<group>"; };
+		FF042B4928C1CB6A00D939B7 /* SportsDataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SportsDataModel.swift; sourceTree = "<group>"; };
+		FF8AD06F28C2B273005EBEF6 /* MatchesCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MatchesCell.swift; sourceTree = "<group>"; };
+		FF8AD07928C2BA6C005EBEF6 /* HockeyPre.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HockeyPre.swift; sourceTree = "<group>"; };
+		FF90EB8328BF58A2003B872B /* Hockey Stream.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Hockey Stream.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF90EB8628BF58A2003B872B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FF90EB8828BF58A2003B872B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		FF90EB8A28BF58A2003B872B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FF90EB8F28BF58A4003B872B /* image.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = image.xcassets; sourceTree = "<group>"; };
+		FF90EB9228BF58A4003B872B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FF90EB9428BF58A4003B872B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FF90EB9C28BF62C4003B872B /* UpcommingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpcommingVC.swift; sourceTree = "<group>"; };
+		FF90EBA028BF8D20003B872B /* MenuVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuVC.swift; sourceTree = "<group>"; };
+		FF90EBA228BF9EEE003B872B /* CompleatedVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompleatedVC.swift; sourceTree = "<group>"; };
+		FF90EBA428BFD4F7003B872B /* CalendarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarVC.swift; sourceTree = "<group>"; };
+		FF90EBA628BFD536003B872B /* NewsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsVC.swift; sourceTree = "<group>"; };
+		FF90EBA828BFD542003B872B /* NotesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesVC.swift; sourceTree = "<group>"; };
+		FF90EBAA28BFD54E003B872B /* SettingsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsVC.swift; sourceTree = "<group>"; };
+		FF90EBAC28BFF900003B872B /* click_buttons.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = click_buttons.mp3; sourceTree = "<group>"; };
+		FF90EBB328C017BF003B872B /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		FF90EBB628C017D6003B872B /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		FF90EBBD28C018B1003B872B /* NewNote+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NewNote+CoreDataClass.swift"; sourceTree = "<group>"; };
+		FF90EBBE28C018B1003B872B /* NewNote+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NewNote+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		FF9D9F3628C375D000C2AE4A /* Games.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Games.swift; sourceTree = "<group>"; };
+		FF9D9F5428C40C3C00C2AE4A /* HockeyEnd.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HockeyEnd.swift; sourceTree = "<group>"; };
+		FF9D9F5B28C421D800C2AE4A /* EntryNoteVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryNoteVC.swift; sourceTree = "<group>"; };
+		FF9D9F5D28C4280500C2AE4A /* DetailNoteVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailNoteVC.swift; sourceTree = "<group>"; };
+		FF9D9F6128C4377800C2AE4A /* FactorVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactorVC.swift; sourceTree = "<group>"; };
+		FF9D9F6628C43D0400C2AE4A /* oddsPreMatches.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = oddsPreMatches.swift; sourceTree = "<group>"; };
+		FF9D9F7428C4404900C2AE4A /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FF9D9F7628C440B400C2AE4A /* bukCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = bukCell.swift; sourceTree = "<group>"; };
+		FF9FDE8728C4A14A00F7BDA4 /* HockeyStatisticVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HockeyStatisticVC.swift; sourceTree = "<group>"; };
+		FFED6B9928C6381000C7CB9D /* StatisticHockey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticHockey.swift; sourceTree = "<group>"; };
+		FFED6B9B28C6458E00C7CB9D /* CalendarCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarCell.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FF90EB8028BF58A2003B872B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB23BB647BF6A2CC33522DF3 /* Pods_Sports_Factor.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5D724EA8E965A8AED4362A28 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7246A55647AF25AC0F5AECFE /* Pods_Sports_Factor.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D6EAEA4E7E6C74A2F0DDAF48 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				86E37589F5542FEECC521938 /* Pods-Sports-Factor.debug.xcconfig */,
+				3ECB208E983A6D53B8B7D6D0 /* Pods-Sports-Factor.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		FF042ADD28C1C42500D939B7 /* Notes */ = {
+			isa = PBXGroup;
+			children = (
+				FF90EBA828BFD542003B872B /* NotesVC.swift */,
+				FF9D9F5B28C421D800C2AE4A /* EntryNoteVC.swift */,
+				FF9D9F5D28C4280500C2AE4A /* DetailNoteVC.swift */,
+			);
+			path = Notes;
+			sourceTree = "<group>";
+		};
+		FF042ADE28C1C47900D939B7 /* ApiClient */ = {
+			isa = PBXGroup;
+			children = (
+				FF042B4028C1C92600D939B7 /* CommomViewModel.swift */,
+				FF042ADF28C1C47900D939B7 /* APIClient.swift */,
+				FF042AE028C1C47900D939B7 /* HeaderRequestParameter.swift */,
+				FF042AE128C1C47900D939B7 /* APIManager.swift */,
+				FF042AE228C1C47900D939B7 /* FileParameterRequest.swift */,
+				FF042AF228C1C5BC00D939B7 /* Global Constants.swift */,
+				FF042AF328C1C5BC00D939B7 /* ResponseData.swift */,
+			);
+			path = ApiClient;
+			sourceTree = "<group>";
+		};
+		FF042B3228C1C82000D939B7 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				FF042B3328C1C82000D939B7 /* UIView+Extensions.swift */,
+				FF042B3428C1C82000D939B7 /* Extensions.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		FF042B3928C1C86800D939B7 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				FF9D9F5628C40CDA00C2AE4A /* GamesStructers */,
+				FF042B4928C1CB6A00D939B7 /* SportsDataModel.swift */,
+				FF042ADE28C1C47900D939B7 /* ApiClient */,
+				FF042B3228C1C82000D939B7 /* Extension */,
+				FF042B3528C1C82000D939B7 /* IndicatorManager.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		FF042B3A28C1C89300D939B7 /* NewsCell */ = {
+			isa = PBXGroup;
+			children = (
+				FF042B4728C1CA2300D939B7 /* NewsDetailsVM.swift */,
+				FF042ADB28C1C40800D939B7 /* NewsModel.swift */,
+				FF042B3B28C1C89300D939B7 /* NewsCell.swift */,
+				FF042B3C28C1C89300D939B7 /* NewsCell.xib */,
+				FF042B4228C1C9BA00D939B7 /* NewsDetails */,
+			);
+			path = NewsCell;
+			sourceTree = "<group>";
+		};
+		FF042B3F28C1C89F00D939B7 /* News */ = {
+			isa = PBXGroup;
+			children = (
+				FF90EB8428BF58A2003B872B /* Products */,
+				FF90EBA628BFD536003B872B /* NewsVC.swift */,
+				FF042B3A28C1C89300D939B7 /* NewsCell */,
+			);
+			path = News;
+			sourceTree = "<group>";
+		};
+		FF042B4228C1C9BA00D939B7 /* NewsDetails */ = {
+			isa = PBXGroup;
+			children = (
+				FF042B4328C1C9BA00D939B7 /* NewsDetailsVC.swift */,
+			);
+			path = NewsDetails;
+			sourceTree = "<group>";
+		};
+		FF8AD06B28C2B273005EBEF6 /* MatchesCell */ = {
+			isa = PBXGroup;
+			children = (
+				FF8AD06F28C2B273005EBEF6 /* MatchesCell.swift */,
+			);
+			path = MatchesCell;
+			sourceTree = "<group>";
+		};
+		FF8AD07428C2B287005EBEF6 /* Upcomming */ = {
+			isa = PBXGroup;
+			children = (
+				FF90EB9C28BF62C4003B872B /* UpcommingVC.swift */,
+				FF8AD06B28C2B273005EBEF6 /* MatchesCell */,
+			);
+			path = Upcomming;
+			sourceTree = "<group>";
+		};
+		FF90EB7A28BF58A2003B872B = {
+			isa = PBXGroup;
+			children = (
+				FF90EB8528BF58A2003B872B /* Hockey Stream */,
+				D6EAEA4E7E6C74A2F0DDAF48 /* Pods */,
+				5D724EA8E965A8AED4362A28 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		FF90EB8428BF58A2003B872B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FF90EB8328BF58A2003B872B /* Hockey Stream.app */,
+			);
+			name = Products;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		FF90EB8528BF58A2003B872B /* Hockey Stream */ = {
+			isa = PBXGroup;
+			children = (
+				FF90EB8628BF58A2003B872B /* AppDelegate.swift */,
+				FF90EB8828BF58A2003B872B /* SceneDelegate.swift */,
+				FF90EB8A28BF58A2003B872B /* ViewController.swift */,
+				FF9D9F5A28C41D4B00C2AE4A /* Menu */,
+				FF8AD07428C2B287005EBEF6 /* Upcomming */,
+				FF9D9F5728C41D1500C2AE4A /* Compleated */,
+				FF9FDE8428C49B1500F7BDA4 /* Statistic */,
+				FF9D9F5828C41D3000C2AE4A /* Calendar */,
+				FF042B3F28C1C89F00D939B7 /* News */,
+				FF042ADD28C1C42500D939B7 /* Notes */,
+				FF9D9F6328C4378900C2AE4A /* Factor */,
+				FF9D9F5928C41D3900C2AE4A /* Settings */,
+				FF90EBB828C01833003B872B /* Core Data */,
+				FF90EBAE28BFF906003B872B /* Assets */,
+				FF042B3928C1C86800D939B7 /* Helper */,
+				FF9D9F7428C4404900C2AE4A /* Main.storyboard */,
+				FF90EB9128BF58A4003B872B /* LaunchScreen.storyboard */,
+				FF90EB9428BF58A4003B872B /* Info.plist */,
+			);
+			path = "Hockey Stream";
+			sourceTree = "<group>";
+		};
+		FF90EBAE28BFF906003B872B /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				FF90EB8F28BF58A4003B872B /* image.xcassets */,
+				FF90EBAC28BFF900003B872B /* click_buttons.mp3 */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		FF90EBB828C01833003B872B /* Core Data */ = {
+			isa = PBXGroup;
+			children = (
+				FF90EBBD28C018B1003B872B /* NewNote+CoreDataClass.swift */,
+				FF90EBBE28C018B1003B872B /* NewNote+CoreDataProperties.swift */,
+				FF90EBB328C017BF003B872B /* CoreDataManager.swift */,
+				FF90EBB528C017D6003B872B /* Model.xcdatamodeld */,
+			);
+			path = "Core Data";
+			sourceTree = "<group>";
+		};
+		FF9D9F5628C40CDA00C2AE4A /* GamesStructers */ = {
+			isa = PBXGroup;
+			children = (
+				FF8AD07928C2BA6C005EBEF6 /* HockeyPre.swift */,
+				FF9D9F5428C40C3C00C2AE4A /* HockeyEnd.swift */,
+				FF9D9F3628C375D000C2AE4A /* Games.swift */,
+				FFED6B9928C6381000C7CB9D /* StatisticHockey.swift */,
+			);
+			path = GamesStructers;
+			sourceTree = "<group>";
+		};
+		FF9D9F5728C41D1500C2AE4A /* Compleated */ = {
+			isa = PBXGroup;
+			children = (
+				FF90EBA228BF9EEE003B872B /* CompleatedVC.swift */,
+			);
+			path = Compleated;
+			sourceTree = "<group>";
+		};
+		FF9D9F5828C41D3000C2AE4A /* Calendar */ = {
+			isa = PBXGroup;
+			children = (
+				FF90EBA428BFD4F7003B872B /* CalendarVC.swift */,
+				FFED6B9B28C6458E00C7CB9D /* CalendarCell.swift */,
+			);
+			path = Calendar;
+			sourceTree = "<group>";
+		};
+		FF9D9F5928C41D3900C2AE4A /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				FF90EBAA28BFD54E003B872B /* SettingsVC.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		FF9D9F5A28C41D4B00C2AE4A /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				FF90EBA028BF8D20003B872B /* MenuVC.swift */,
+			);
+			path = Menu;
+			sourceTree = "<group>";
+		};
+		FF9D9F6328C4378900C2AE4A /* Factor */ = {
+			isa = PBXGroup;
+			children = (
+				FF9D9F6128C4377800C2AE4A /* FactorVC.swift */,
+				FF9D9F6628C43D0400C2AE4A /* oddsPreMatches.swift */,
+				FF9D9F7628C440B400C2AE4A /* bukCell.swift */,
+			);
+			path = Factor;
+			sourceTree = "<group>";
+		};
+		FF9FDE8428C49B1500F7BDA4 /* Statistic */ = {
+			isa = PBXGroup;
+			children = (
+				FF9FDE8728C4A14A00F7BDA4 /* HockeyStatisticVC.swift */,
+			);
+			path = Statistic;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FF90EB8228BF58A2003B872B /* Hockey Stream */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FF90EB9728BF58A4003B872B /* Build configuration list for PBXNativeTarget "Hockey Stream" */;
+			buildPhases = (
+				7384B9F58BDA71F8C3926549 /* [CP] Check Pods Manifest.lock */,
+				FF90EB7F28BF58A2003B872B /* Sources */,
+				FF90EB8028BF58A2003B872B /* Frameworks */,
+				FF90EB8128BF58A2003B872B /* Resources */,
+				FF042AA228C1C30900D939B7 /* Embed Frameworks */,
+				EDE6570E2DAF7360D9103518 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Hockey Stream";
+			productName = "Sports-Factor";
+			productReference = FF90EB8328BF58A2003B872B /* Hockey Stream.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FF90EB7B28BF58A2003B872B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					FF90EB8228BF58A2003B872B = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+				};
+			};
+			buildConfigurationList = FF90EB7E28BF58A2003B872B /* Build configuration list for PBXProject "Hockey Stream" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FF90EB7A28BF58A2003B872B;
+			productRefGroup = FF90EB8428BF58A2003B872B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FF90EB8228BF58A2003B872B /* Hockey Stream */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FF90EB8128BF58A2003B872B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF90EB9328BF58A4003B872B /* LaunchScreen.storyboard in Resources */,
+				FF9D9F7528C4404900C2AE4A /* Main.storyboard in Resources */,
+				FF90EBAD28BFF900003B872B /* click_buttons.mp3 in Resources */,
+				FF042B3E28C1C89300D939B7 /* NewsCell.xib in Resources */,
+				FF90EB9028BF58A4003B872B /* image.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7384B9F58BDA71F8C3926549 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Sports-Factor-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EDE6570E2DAF7360D9103518 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Sports-Factor/Pods-Sports-Factor-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Sports-Factor/Pods-Sports-Factor-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Sports-Factor/Pods-Sports-Factor-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FF90EB7F28BF58A2003B872B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF90EBA328BF9EEE003B872B /* CompleatedVC.swift in Sources */,
+				FF042B3728C1C82000D939B7 /* Extensions.swift in Sources */,
+				FF90EBA928BFD542003B872B /* NotesVC.swift in Sources */,
+				FF042B3D28C1C89300D939B7 /* NewsCell.swift in Sources */,
+				FFED6B9C28C6458E00C7CB9D /* CalendarCell.swift in Sources */,
+				FF90EBB728C017D6003B872B /* Model.xcdatamodeld in Sources */,
+				FF042AE428C1C47900D939B7 /* HeaderRequestParameter.swift in Sources */,
+				FF042ADC28C1C40800D939B7 /* NewsModel.swift in Sources */,
+				FF90EB8B28BF58A2003B872B /* ViewController.swift in Sources */,
+				FF042AE328C1C47900D939B7 /* APIClient.swift in Sources */,
+				FF90EB9D28BF62C4003B872B /* UpcommingVC.swift in Sources */,
+				FF90EB8728BF58A2003B872B /* AppDelegate.swift in Sources */,
+				FF042B4428C1C9BA00D939B7 /* NewsDetailsVC.swift in Sources */,
+				FF042B3828C1C82000D939B7 /* IndicatorManager.swift in Sources */,
+				FF9D9F4528C375D000C2AE4A /* Games.swift in Sources */,
+				FF9D9F5528C40C3C00C2AE4A /* HockeyEnd.swift in Sources */,
+				FF90EBB428C017BF003B872B /* CoreDataManager.swift in Sources */,
+				FF042AE628C1C47900D939B7 /* FileParameterRequest.swift in Sources */,
+				FF90EBA528BFD4F7003B872B /* CalendarVC.swift in Sources */,
+				FF9D9F5C28C421D800C2AE4A /* EntryNoteVC.swift in Sources */,
+				FF042B4828C1CA2300D939B7 /* NewsDetailsVM.swift in Sources */,
+				FF90EBBF28C018B1003B872B /* NewNote+CoreDataClass.swift in Sources */,
+				FF042B4128C1C92600D939B7 /* CommomViewModel.swift in Sources */,
+				FF8AD07A28C2BA6C005EBEF6 /* HockeyPre.swift in Sources */,
+				FF90EBA728BFD536003B872B /* NewsVC.swift in Sources */,
+				FF042B4A28C1CB6A00D939B7 /* SportsDataModel.swift in Sources */,
+				FF042B3628C1C82000D939B7 /* UIView+Extensions.swift in Sources */,
+				FF90EBC028C018B1003B872B /* NewNote+CoreDataProperties.swift in Sources */,
+				FFED6B9A28C6381000C7CB9D /* StatisticHockey.swift in Sources */,
+				FF9D9F5E28C4280500C2AE4A /* DetailNoteVC.swift in Sources */,
+				FF90EB8928BF58A2003B872B /* SceneDelegate.swift in Sources */,
+				FF042AE528C1C47900D939B7 /* APIManager.swift in Sources */,
+				FF90EBA128BF8D20003B872B /* MenuVC.swift in Sources */,
+				FF9D9F6228C4377800C2AE4A /* FactorVC.swift in Sources */,
+				FF9D9F7728C440B500C2AE4A /* bukCell.swift in Sources */,
+				FF9FDE8828C4A14A00F7BDA4 /* HockeyStatisticVC.swift in Sources */,
+				FF042AF528C1C5BC00D939B7 /* ResponseData.swift in Sources */,
+				FF90EBAB28BFD54E003B872B /* SettingsVC.swift in Sources */,
+				FF9D9F6728C43D0400C2AE4A /* oddsPreMatches.swift in Sources */,
+				FF042AF428C1C5BC00D939B7 /* Global Constants.swift in Sources */,
+				FF8AD07328C2B273005EBEF6 /* MatchesCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		FF90EB9128BF58A4003B872B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FF90EB9228BF58A4003B872B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FF90EB9528BF58A4003B872B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FF90EB9628BF58A4003B872B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FF90EB9828BF58A4003B872B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 86E37589F5542FEECC521938 /* Pods-Sports-Factor.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 63MRMFLDND;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Hockey Stream/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Hockey Stream";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Hockey01Stream;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		FF90EB9928BF58A4003B872B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3ECB208E983A6D53B8B7D6D0 /* Pods-Sports-Factor.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 63MRMFLDND;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Hockey Stream/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Hockey Stream";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Hockey01Stream;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FF90EB7E28BF58A2003B872B /* Build configuration list for PBXProject "Hockey Stream" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF90EB9528BF58A4003B872B /* Debug */,
+				FF90EB9628BF58A4003B872B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FF90EB9728BF58A4003B872B /* Build configuration list for PBXNativeTarget "Hockey Stream" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF90EB9828BF58A4003B872B /* Debug */,
+				FF90EB9928BF58A4003B872B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		FF90EBB528C017D6003B872B /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				FF90EBB628C017D6003B872B /* Model.xcdatamodel */,
+			);
+			currentVersion = FF90EBB628C017D6003B872B /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = FF90EB7B28BF58A2003B872B /* Project object */;
+}
