@@ -87,8 +87,7 @@ extension CompleatedVC : UICollectionViewDataSource,UICollectionViewDelegate{
                 let localDate = dateFormatter.string(from: date)
             let components = localDate.components(separatedBy: " at ")
             
-            cell.team1Lbl.text = "\(self.allHockeyGames[indexPath.row].home.name)"
-            cell.team2Lbl.text = "\(self.allHockeyGames[indexPath.row].away.name)"
+            cell.team2Lbl.text = "\(self.allHockeyGames[indexPath.row].home.name) - \(self.allHockeyGames[indexPath.row].away.name)"
             cell.gameDataLbl.text = components[0]
             cell.homeTeamFlag.image = UIImage(named: "hockeyImg")
             cell.awayTeamFlag.image = UIImage(named: "hockeyImg")
@@ -113,8 +112,7 @@ extension CompleatedVC : UICollectionViewDataSource,UICollectionViewDelegate{
                     let localDate = dateFormatter.string(from: date)
                 let components = localDate.components(separatedBy: " at ")
 
-                cell.team1Lbl.text = "\(self.allHockeyGames[indexPath.row].home.name)"
-                cell.team2Lbl.text = "\(self.allHockeyGames[indexPath.row].away.name)"
+                cell.team2Lbl.text = "\(self.allHockeyGames[indexPath.row].home.name) - \(self.allHockeyGames[indexPath.row].away.name)"
                 cell.gameDataLbl.text = components[0]
                 cell.homeTeamFlag.image = UIImage(named: "hockeyImg")
                 cell.awayTeamFlag.image = UIImage(named: "hockeyImg")
