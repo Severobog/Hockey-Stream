@@ -11,7 +11,10 @@ class UpcommingVC: UIViewController {
 
     @IBOutlet var gameCol: UICollectionView!
 
+    @IBOutlet var segmentedCOntroll: UISegmentedControl!
     var allHockeyGames : [HockeyGamesPre] = []
+    
+    var isLive = true
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,6 +23,26 @@ class UpcommingVC: UIViewController {
         
         gameCol.delegate = self
         gameCol.dataSource = self
+        
+//        let url = URL(string: "https://spoyer.com/api/get.php?login=ayna&token=12784-OhJLY5mb3BSOx0O&task=livedata&sport=icehockey")
+//        var request = URLRequest(url: url!)
+//        request.httpMethod = "GET"
+//
+//        URLSession.shared.dataTask(with: request, completionHandler: { data, response, error -> Void in
+//
+//            do {
+//                let jsonDecoder = JSONDecoder()
+//                let responseModel = try jsonDecoder.decode(HockeyPre.self, from: data!)
+//
+//                self.allHockeyGames = responseModel.gamesPre
+//
+//                DispatchQueue.main.async {
+//                    self.gameCol.reloadData()
+//                }
+//            } catch {
+//                print("JSON Serialization error")
+//            }
+//        }).resume()
         
         let urlNew = URL(string: "https://spoyer.com/api/get.php?login=ayna&token=12784-OhJLY5mb3BSOx0O&task=predata&sport=icehockey&day=today&p=1")
         var requestNew = URLRequest(url: urlNew!)
@@ -40,6 +63,11 @@ class UpcommingVC: UIViewController {
                 print("JSON Serialization error")
             }
         }).resume()
+    }
+    @IBAction func segmAction(_ sender: UISegmentedControl) {
+        AppDelegate.shared.playAudioFile()
+        isLive.toggle()
+        gameCol.reloadData()
     }
     
     func convertDateToStringGame(date: Date) -> String {
@@ -78,6 +106,11 @@ extension UpcommingVC : UICollectionViewDataSource,UICollectionViewDelegate{
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        if isLive {
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "MatchesCollectionViewCell", for: indexPath) as! MatchesCollectionViewCell
+            
+            return cell
+        } else {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "MatchesCollectionViewCell", for: indexPath) as! MatchesCollectionViewCell
             let date = Date(timeIntervalSince1970: Double(self.allHockeyGames[indexPath.row].time)!)
                 let dateFormatter = DateFormatter()
@@ -94,5 +127,6 @@ extension UpcommingVC : UICollectionViewDataSource,UICollectionViewDelegate{
             cell.awayTeamFlag.image = UIImage(named: "hockeyImg")
             
             return cell
+        }
     }
 }
