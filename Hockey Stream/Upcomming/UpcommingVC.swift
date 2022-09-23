@@ -108,6 +108,7 @@ extension UpcommingVC : UICollectionViewDataSource,UICollectionViewDelegate{
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         if isLive {
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "MatchesCollectionViewCell", for: indexPath) as! MatchesCollectionViewCell
+            cell.liveLbl.isHidden = false
             
             return cell
         } else {
@@ -119,6 +120,7 @@ extension UpcommingVC : UICollectionViewDataSource,UICollectionViewDelegate{
                 dateFormatter.timeZone = .current
                 let localDate = dateFormatter.string(from: date)
             let components = localDate.components(separatedBy: " at ")
+            cell.liveLbl.isHidden = true
             
             cell.team1Lbl.text = "\(self.allHockeyGames[indexPath.row].home.name)"
             cell.team2Lbl.text = "\(self.allHockeyGames[indexPath.row].away.name)"

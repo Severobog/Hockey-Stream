@@ -19,4 +19,5 @@ class MatchesCollectionViewCell: UICollectionViewCell {
     
     @IBOutlet weak var scoreLbl: UILabel!
     
+    @IBOutlet var liveLbl: UIButton!
 }
