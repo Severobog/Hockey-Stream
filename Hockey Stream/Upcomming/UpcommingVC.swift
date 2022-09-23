@@ -13,6 +13,7 @@ class UpcommingVC: UIViewController {
 
     @IBOutlet var segmentedCOntroll: UISegmentedControl!
     var allHockeyGames : [HockeyGamesPre] = []
+    var hockeyGamesLive : [HockeyGamesLive] = []
     
     var isLive = true
     
@@ -24,38 +25,38 @@ class UpcommingVC: UIViewController {
         gameCol.delegate = self
         gameCol.dataSource = self
         
-//        let url = URL(string: "https://spoyer.com/api/get.php?login=ayna&token=12784-OhJLY5mb3BSOx0O&task=livedata&sport=icehockey")
-//        var request = URLRequest(url: url!)
-//        request.httpMethod = "GET"
-//
-//        URLSession.shared.dataTask(with: request, completionHandler: { data, response, error -> Void in
-//
-//            do {
-//                let jsonDecoder = JSONDecoder()
-//                let responseModel = try jsonDecoder.decode(HockeyPre.self, from: data!)
-//
-//                self.allHockeyGames = responseModel.gamesPre
-//
-//                DispatchQueue.main.async {
-//                    self.gameCol.reloadData()
-//                }
-//            } catch {
-//                print("JSON Serialization error")
-//            }
-//        }).resume()
+        let url = URL(string: "https://spoyer.com/api/get.php?login=ayna&token=12784-OhJLY5mb3BSOx0O&task=livedata&sport=icehockey")
+        var request = URLRequest(url: url!)
+        request.httpMethod = "GET"
+
+        URLSession.shared.dataTask(with: request, completionHandler: { data, response, error -> Void in
+
+            do {
+                let jsonDecoder = JSONDecoder()
+                let responseModel = try jsonDecoder.decode(HockeyLive.self, from: data!)
+
+                self.hockeyGamesLive = responseModel.gamesLive
+
+                DispatchQueue.main.async {
+                    self.gameCol.reloadData()
+                }
+            } catch {
+                print("JSON Serialization error")
+            }
+        }).resume()
         
         let urlNew = URL(string: "https://spoyer.com/api/get.php?login=ayna&token=12784-OhJLY5mb3BSOx0O&task=predata&sport=icehockey&day=today&p=1")
         var requestNew = URLRequest(url: urlNew!)
         requestNew.httpMethod = "GET"
 
         URLSession.shared.dataTask(with: requestNew, completionHandler: { data, response, error -> Void in
-            
+
             do {
                 let jsonDecoder = JSONDecoder()
                 let responseModel = try jsonDecoder.decode(HockeyPre.self, from: data!)
-                
+
                 self.allHockeyGames = responseModel.gamesPre
-                
+
                 DispatchQueue.main.async {
                     self.gameCol.reloadData()
                 }
@@ -101,14 +102,30 @@ extension UpcommingVC : UICollectionViewDelegateFlowLayout{
 extension UpcommingVC : UICollectionViewDataSource,UICollectionViewDelegate{
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        
-        return allHockeyGames.count
+        if isLive {
+            return hockeyGamesLive.count
+        } else {
+            return allHockeyGames.count
+        }
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         if isLive {
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "MatchesCollectionViewCell", for: indexPath) as! MatchesCollectionViewCell
+            
+            let date = Date(timeIntervalSince1970: Double(self.hockeyGamesLive[indexPath.row].time)!)
+                let dateFormatter = DateFormatter()
+                dateFormatter.timeStyle = DateFormatter.Style.medium //Set time style
+                dateFormatter.dateStyle = DateFormatter.Style.medium //Set date style
+                dateFormatter.timeZone = .current
+                let localDate = dateFormatter.string(from: date)
+            let components = localDate.components(separatedBy: " at ")
+            
             cell.liveLbl.isHidden = false
+            cell.gameDataLbl.text = components[0]
+            cell.team1Lbl.text = self.hockeyGamesLive[indexPath.row].home.name
+            cell.team2Lbl.text = self.hockeyGamesLive[indexPath.row].away.name
+            cell.scoreLbl.text = self.hockeyGamesLive[indexPath.row].score
             
             return cell
         } else {

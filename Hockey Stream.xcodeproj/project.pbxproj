@@ -24,6 +24,7 @@
 		FF042B4428C1C9BA00D939B7 /* NewsDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF042B4328C1C9BA00D939B7 /* NewsDetailsVC.swift */; };
 		FF042B4828C1CA2300D939B7 /* NewsDetailsVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF042B4728C1CA2300D939B7 /* NewsDetailsVM.swift */; };
 		FF042B4A28C1CB6A00D939B7 /* SportsDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF042B4928C1CB6A00D939B7 /* SportsDataModel.swift */; };
+		FF5AA1E928DDDC3700BF9537 /* HockeyLive.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5AA1E828DDDC3600BF9537 /* HockeyLive.swift */; };
 		FF8AD07328C2B273005EBEF6 /* MatchesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF8AD06F28C2B273005EBEF6 /* MatchesCell.swift */; };
 		FF8AD07A28C2BA6C005EBEF6 /* HockeyPre.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF8AD07928C2BA6C005EBEF6 /* HockeyPre.swift */; };
 		FF90EB8728BF58A2003B872B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF90EB8628BF58A2003B872B /* AppDelegate.swift */; };
@@ -89,6 +90,7 @@
 		FF042B4328C1C9BA00D939B7 /* NewsDetailsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsDetailsVC.swift; sourceTree = "<group>"; };
 		FF042B4728C1CA2300D939B7 /* NewsDetailsVM.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsDetailsVM.swift; sourceTree = "<group>"; };
 		FF042B4928C1CB6A00D939B7 /* SportsDataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SportsDataModel.swift; sourceTree = "<group>"; };
+		FF5AA1E828DDDC3600BF9537 /* HockeyLive.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HockeyLive.swift; sourceTree = "<group>"; };
 		FF8AD06F28C2B273005EBEF6 /* MatchesCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MatchesCell.swift; sourceTree = "<group>"; };
 		FF8AD07928C2BA6C005EBEF6 /* HockeyPre.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HockeyPre.swift; sourceTree = "<group>"; };
 		FF90EB8328BF58A2003B872B /* Hockey Stream.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Hockey Stream.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -312,6 +314,7 @@
 			children = (
 				FF8AD07928C2BA6C005EBEF6 /* HockeyPre.swift */,
 				FF9D9F5428C40C3C00C2AE4A /* HockeyEnd.swift */,
+				FF5AA1E828DDDC3600BF9537 /* HockeyLive.swift */,
 				FF9D9F3628C375D000C2AE4A /* Games.swift */,
 				FFED6B9928C6381000C7CB9D /* StatisticHockey.swift */,
 			);
@@ -501,6 +504,7 @@
 				FF90EB8728BF58A2003B872B /* AppDelegate.swift in Sources */,
 				FF042B4428C1C9BA00D939B7 /* NewsDetailsVC.swift in Sources */,
 				FF042B3828C1C82000D939B7 /* IndicatorManager.swift in Sources */,
+				FF5AA1E928DDDC3700BF9537 /* HockeyLive.swift in Sources */,
 				FF9D9F4528C375D000C2AE4A /* Games.swift in Sources */,
 				FF9D9F5528C40C3C00C2AE4A /* HockeyEnd.swift in Sources */,
 				FF90EBB428C017BF003B872B /* CoreDataManager.swift in Sources */,
