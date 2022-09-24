@@ -32,7 +32,7 @@ class HockeyStatisticVC: UIViewController, UICollectionViewDelegate, UICollectio
         gameCellView.dataSource = self
         gameCellView.delegate = self
         
-        let url = URL(string: "https://spoyer.com/api/get.php?login=ayna&token=12784-OhJLY5mb3BSOx0O&task=eventdata&game_id=\(gameID)")
+        let url = URL(string: "https://spoyer.com/api/en/get.php?login=ayna&token=12784-OhJLY5mb3BSOx0O&task=eventdata&game_id=\(gameID)")
         
         //5144221
 

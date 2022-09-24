@@ -21,7 +21,7 @@ class CompleatedVC: UIViewController {
         gameCol.delegate = self
         gameCol.dataSource = self
         
-        let urlNew = URL(string: "https://spoyer.com/api/get.php?login=ayna&token=12784-OhJLY5mb3BSOx0O&task=enddata&sport=icehockey&day=20220901&p=1")
+        let urlNew = URL(string: "https://spoyer.com/api/en/get.php?login=ayna&token=12784-OhJLY5mb3BSOx0O&task=enddata&sport=icehockey&day=20220901&p=1")
         var requestNew = URLRequest(url: urlNew!)
         requestNew.httpMethod = "GET"
 

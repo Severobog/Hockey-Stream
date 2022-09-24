@@ -48,10 +48,7 @@
 		FF9D9F5528C40C3C00C2AE4A /* HockeyEnd.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9D9F5428C40C3C00C2AE4A /* HockeyEnd.swift */; };
 		FF9D9F5C28C421D800C2AE4A /* EntryNoteVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9D9F5B28C421D800C2AE4A /* EntryNoteVC.swift */; };
 		FF9D9F5E28C4280500C2AE4A /* DetailNoteVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9D9F5D28C4280500C2AE4A /* DetailNoteVC.swift */; };
-		FF9D9F6228C4377800C2AE4A /* FactorVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9D9F6128C4377800C2AE4A /* FactorVC.swift */; };
-		FF9D9F6728C43D0400C2AE4A /* oddsPreMatches.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9D9F6628C43D0400C2AE4A /* oddsPreMatches.swift */; };
 		FF9D9F7528C4404900C2AE4A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF9D9F7428C4404900C2AE4A /* Main.storyboard */; };
-		FF9D9F7728C440B500C2AE4A /* bukCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9D9F7628C440B400C2AE4A /* bukCell.swift */; };
 		FF9FDE8828C4A14A00F7BDA4 /* HockeyStatisticVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9FDE8728C4A14A00F7BDA4 /* HockeyStatisticVC.swift */; };
 		FFED6B9A28C6381000C7CB9D /* StatisticHockey.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFED6B9928C6381000C7CB9D /* StatisticHockey.swift */; };
 		FFED6B9C28C6458E00C7CB9D /* CalendarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFED6B9B28C6458E00C7CB9D /* CalendarCell.swift */; };
@@ -116,10 +113,7 @@
 		FF9D9F5428C40C3C00C2AE4A /* HockeyEnd.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HockeyEnd.swift; sourceTree = "<group>"; };
 		FF9D9F5B28C421D800C2AE4A /* EntryNoteVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryNoteVC.swift; sourceTree = "<group>"; };
 		FF9D9F5D28C4280500C2AE4A /* DetailNoteVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailNoteVC.swift; sourceTree = "<group>"; };
-		FF9D9F6128C4377800C2AE4A /* FactorVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactorVC.swift; sourceTree = "<group>"; };
-		FF9D9F6628C43D0400C2AE4A /* oddsPreMatches.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = oddsPreMatches.swift; sourceTree = "<group>"; };
 		FF9D9F7428C4404900C2AE4A /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		FF9D9F7628C440B400C2AE4A /* bukCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = bukCell.swift; sourceTree = "<group>"; };
 		FF9FDE8728C4A14A00F7BDA4 /* HockeyStatisticVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HockeyStatisticVC.swift; sourceTree = "<group>"; };
 		FFED6B9928C6381000C7CB9D /* StatisticHockey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticHockey.swift; sourceTree = "<group>"; };
 		FFED6B9B28C6458E00C7CB9D /* CalendarCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarCell.swift; sourceTree = "<group>"; };
@@ -277,7 +271,6 @@
 				FF9D9F5828C41D3000C2AE4A /* Calendar */,
 				FF042B3F28C1C89F00D939B7 /* News */,
 				FF042ADD28C1C42500D939B7 /* Notes */,
-				FF9D9F6328C4378900C2AE4A /* Factor */,
 				FF9D9F5928C41D3900C2AE4A /* Settings */,
 				FF90EBB828C01833003B872B /* Core Data */,
 				FF90EBAE28BFF906003B872B /* Assets */,
@@ -352,16 +345,6 @@
 				FF90EBA028BF8D20003B872B /* MenuVC.swift */,
 			);
 			path = Menu;
-			sourceTree = "<group>";
-		};
-		FF9D9F6328C4378900C2AE4A /* Factor */ = {
-			isa = PBXGroup;
-			children = (
-				FF9D9F6128C4377800C2AE4A /* FactorVC.swift */,
-				FF9D9F6628C43D0400C2AE4A /* oddsPreMatches.swift */,
-				FF9D9F7628C440B400C2AE4A /* bukCell.swift */,
-			);
-			path = Factor;
 			sourceTree = "<group>";
 		};
 		FF9FDE8428C49B1500F7BDA4 /* Statistic */ = {
@@ -524,12 +507,9 @@
 				FF90EB8928BF58A2003B872B /* SceneDelegate.swift in Sources */,
 				FF042AE528C1C47900D939B7 /* APIManager.swift in Sources */,
 				FF90EBA128BF8D20003B872B /* MenuVC.swift in Sources */,
-				FF9D9F6228C4377800C2AE4A /* FactorVC.swift in Sources */,
-				FF9D9F7728C440B500C2AE4A /* bukCell.swift in Sources */,
 				FF9FDE8828C4A14A00F7BDA4 /* HockeyStatisticVC.swift in Sources */,
 				FF042AF528C1C5BC00D939B7 /* ResponseData.swift in Sources */,
 				FF90EBAB28BFD54E003B872B /* SettingsVC.swift in Sources */,
-				FF9D9F6728C43D0400C2AE4A /* oddsPreMatches.swift in Sources */,
 				FF042AF428C1C5BC00D939B7 /* Global Constants.swift in Sources */,
 				FF8AD07328C2B273005EBEF6 /* MatchesCell.swift in Sources */,
 			);

@@ -25,7 +25,7 @@ class UpcommingVC: UIViewController {
         gameCol.delegate = self
         gameCol.dataSource = self
         
-        let url = URL(string: "https://spoyer.com/api/get.php?login=ayna&token=12784-OhJLY5mb3BSOx0O&task=livedata&sport=icehockey")
+        let url = URL(string: "https://spoyer.com/api/en/get.php?login=ayna&token=12784-OhJLY5mb3BSOx0O&task=livedata&sport=icehockey")
         var request = URLRequest(url: url!)
         request.httpMethod = "GET"
 
@@ -45,7 +45,7 @@ class UpcommingVC: UIViewController {
             }
         }).resume()
         
-        let urlNew = URL(string: "https://spoyer.com/api/get.php?login=ayna&token=12784-OhJLY5mb3BSOx0O&task=predata&sport=icehockey&day=today&p=1")
+        let urlNew = URL(string: "https://spoyer.com/api/en/get.php?login=ayna&token=12784-OhJLY5mb3BSOx0O&task=predata&sport=icehockey&day=today&p=1")
         var requestNew = URLRequest(url: urlNew!)
         requestNew.httpMethod = "GET"
 
