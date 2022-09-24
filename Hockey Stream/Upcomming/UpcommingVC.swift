@@ -84,7 +84,7 @@ extension UpcommingVC : UICollectionViewDelegateFlowLayout{
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         let yourWidth = collectionView.bounds.width
-        return CGSize(width: yourWidth, height: 220)
+        return CGSize(width: yourWidth, height: 150)
     }
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
         return UIEdgeInsets.zero
@@ -122,9 +122,9 @@ extension UpcommingVC : UICollectionViewDataSource,UICollectionViewDelegate{
             let components = localDate.components(separatedBy: " at ")
             
             cell.liveLbl.isHidden = false
+            cell.scoreLbl.isHidden = false
             cell.gameDataLbl.text = components[0]
-            cell.team1Lbl.text = self.hockeyGamesLive[indexPath.row].home.name
-            cell.team2Lbl.text = self.hockeyGamesLive[indexPath.row].away.name
+            cell.team2Lbl.text = "\(self.hockeyGamesLive[indexPath.row].home.name) - \(self.hockeyGamesLive[indexPath.row].away.name)"
             cell.scoreLbl.text = self.hockeyGamesLive[indexPath.row].score
             
             return cell
@@ -138,9 +138,8 @@ extension UpcommingVC : UICollectionViewDataSource,UICollectionViewDelegate{
                 let localDate = dateFormatter.string(from: date)
             let components = localDate.components(separatedBy: " at ")
             cell.liveLbl.isHidden = true
-            
-            cell.team1Lbl.text = "\(self.allHockeyGames[indexPath.row].home.name)"
-            cell.team2Lbl.text = "\(self.allHockeyGames[indexPath.row].away.name)"
+            cell.scoreLbl.isHidden = true
+            cell.team2Lbl.text = "\(self.allHockeyGames[indexPath.row].home.name) - \(self.allHockeyGames[indexPath.row].away.name)"
             cell.gameDataLbl.text = components[0]
             cell.homeTeamFlag.image = UIImage(named: "hockeyImg")
             cell.awayTeamFlag.image = UIImage(named: "hockeyImg")
